@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 1</title>
+  <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <!-- <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="assets/js/conteudo_dinamico.js"></script>
+  <script type="text/javascript" src="assets/js/scripts.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="assets/img/logo_vetoria.png" />
+      <img src="assets/img/Instituto de Pesquis.png" />
+    </div>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">O que é o Espiritismo</a>
+      </li>
+      <li class="nav-item" data-toggle="dropdown">
+        <a class="nav-link" href="#">Allan Kardec</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a href="#">Biografia</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Na opinião dos amigos</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Kardec, modelo de devotamento e abnegação</a>
+          </li>
+          <li class="dropdown-item" data-toggle="dropdown">
+            <a href="#">Textos de Hippolyte-Léon Denizard Rivail</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="#">Discurso sobre a educação</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Escola fundada no Mont-Jura</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Roteiro de estudos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Obras de Allan Kardec</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Estudos e pesquisas</a>
+      </li>
+      <li class="nav-item" data-toggle="dropdown">
+        <a class="nav-link" href="#">Mais</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a href="#">Contato</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Fazer uma doação</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Item 3</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Item 4</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Item 5</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav-right-top">
+      <li class="nav-right-item">
+        <a id="NavRightTopSearch" class="nav-right-link" href="#"></a>
+      </li>
+      <li class="nav-right-item">
+        <a id="NavRightTopBrazil" class="nav-right-link" href="#"></a>
+      </li>
+      <li class="nav-right-item">
+        <a id="NavRightTopFrance" class="nav-right-link" href="#"></a>
+      </li>
+    </ul>
+    <ul class="nav-right">
+      <li class="nav-right-item">
+        <a id="NavRightCell" class="nav-right-link" href="#App"></a>
+      </li>
+      <li class="nav-right-item">
+        <a id="NavRightNewsletter" class="nav-right-link" href="#Newsletter"></a>
+      </li>
+      <li class="nav-right-item">
+        <a id="NavRightFacebook" class="nav-right-link" href="#Facebook"></a>
+      </li>
+    </ul>
+    <a href="#slider" id="RollTop">
+      <img src="assets/img/Seta_volta_cima.png"/>
+    </a>
+  </nav>
+
+  <section id="slider">
+    <div id="slider-controls">
+      <div id="slidePrev">
+        <img src="assets/img/seta esq banner.png" />
+      </div>
+      <div id="slideNext">
+        <img src="assets/img/seta dir banner.png" />
+      </div>
+    </div>
+    <ul class="slides">
+      <li id="slide-0" class="slide">
+        <style>
+          #slide-0 {
+            background-image: url('assets/img/banner1.jpg');
+            padding: 62px 0 262px 0;
+          }
+        </style>
+        <h1>
+          Estude online ou imprima a bibliografia <br />
+          para estudar onde desejar
+        </h1>
+        <a href="#" class="btn">Roteiro de estudos</a>
+      </li>
+      <li id="slide-1" class="slide">
+        <style>
+          #slide-1 {
+            background-image: url('assets/img/banner2.jpg');
+            padding: 79px 0 43px 0;
+          }
+        </style>
+        <h1>
+          Allan Kardec: O fundador do Espiritismo
+        </h1>
+        <a href="#" class="btn">Biografia</a>
+      </li>
+      <li id="slide-2" class="slide">
+        <style>
+          #slide-2 {
+            background: rgba(0, 0, 0, .6);
+            align-items: flex-start !important;
+            padding: 75px 0 80px 156px;
+          }
+          #slide-2 h1 {
+            text-align: left !important;
+            margin-bottom: 16px !important;
+            font-size: 50px !important;
+          }
+          #slide-2 .btns a {
+            margin-right: 19px;
+          }
+          #slide-2 .background {
+            background-image: url('assets/img/fundo-banner-apps.jpg');
+            background-position: center center;
+            background-size: cover;
+            z-index: -1;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+          }
+        </style>
+        <div class="background"></div>
+        <h1>
+          Conheça <br />nossos apps!
+        </h1>
+        <div class="btns">
+          <a href="#"><img src="assets/img/app-store.png" /></a>
+          <a href="#"><img src="assets/img/google play.png" /></a>
+        </div>
+        <a href="#" class="btn">Aplicativos Ipeak</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="home-section" id="ParaRefletir">
+    <div class="text-content">
+      <h1>Para refletir</h1>
+      <img src="assets/img/divisor_verm.png"/>
+      <p>
+        O homem nunca é mais forte do que quando ele sente a sua fraqueza, pois tudo pode empreender sob o olhar de Deus. Sua força moral cresce em razão de sua confiança, porque sente necessidade de dirigir-se ao Criador, para pôr sua fraqueza ao abrigo das quedas a que a imperfeição humana pode arrastá-lo.
+      </p>
+      <span>Fénelon</span>
+      <a href="#" class="btn">Mais frases</a>
+    </div>
+    <img src="assets/img/pena_frase.png" />
+  </section>
+
+  <section class="home-section" id="RoteiroDeEstudos">
+    <div class="roteiro-image"></div>
+    <div class="text-content">
+      <h1>Roteiro<br />de estudos</h1>
+      <p>
+        Navegue pelo índice dos livros, e em cada item que abrir encontrará relacionadas as demais obras em que Kardec abordou o tema, e poderá estudar onde estiver. É fácil, prático e muito agradável.
+      </p>
+      <a href="#" class="btn btn-inverse">Roteiro</a>
+    </div>
+  </section>
+
+  <section class="home-section" id="AllanKardec">
+    <div class="text-content">
+      <h1>Allan Kardec</h1>
+      <img src="assets/img/divisor_cinza.png" />
+      <p>
+        Fundador da doutrina chamada espírita, nascido em Lyon em 3 de outubro de 1804, oriundo de Bourg en Bresse, departamento do Ain. Conquanto filho e neto de advogados, e de uma antiga família que se distinguiu na magistratura e no foro, não seguiu essa carreira; dedicou-se cedo ao estudo da ciência e da filosofia. Aluno de Pestalozzi, na Suíça, torna-se um dos discípulos eminentes deste célebre pedagogo, e um dos propagadores de seu sistema de educação, que exerceu grande influência na reforma dos estudos na França e Alemanha. Foi nesta escola que se desenvolveram as ideias que deviam colocá-lo mais tarde na classe dos homens de progresso e dos livres pensadores...
+      </p>
+      <a class="btn btn-alt" href="#">Biografia Allan Kardec</a>
+    </div>
+  </section>
+
+  <section class="home-section" id="Sobre">
+    <div class="text-content">
+      <h1>Sobre o Ipeak</h1>
+      <p>
+        Nosso objetivo não é outro senão o de facilitar o estudo do Espiritismo àqueles que desejam acompanhar o encadeamento e o desenvolvimento das idéias, já traçados pelo próprio Kardec em suas obras.
+      </p>
+      <a class="btn btn-inverse-dark" href="#">Objetivos do IPEAK</a>
+    </div>
+  </section>
+
+  <section class="home-section" id="General">
+    <div class="three-columns">
+      <div id="Catalogo">
+        <div class="img"></div>
+        <div class="icon">
+          <img src="assets/img/catalogo.png" />
+        </div>
+        <span>Catálogo Racional</span>
+        <p>
+          Confira obras que servem para fundar uma biblioteca espírita.
+        </p>
+      </div>
+      <div id="Revista">
+        <div class="img"></div>
+        <div class="icon">
+          <img src="assets/img/revista.png" />
+        </div>
+        <span>Catálogo Racional</span>
+        <p>
+          Confira obras que servem para fundar uma biblioteca espírita.
+        </p>
+      </div>
+      <div id="Estudo">
+        <div class="img"></div>
+        <div class="icon">
+          <img src="assets/img/logo_geak.png" />
+        </div>
+        <span>Catálogo Racional</span>
+        <p>
+          Confira obras que servem para fundar uma biblioteca espírita.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section" id="Dia">
+    <h1>Neste dia: <span id="date">20 de julho</span></h1>
+    <div class="three-columns">
+      <div id="Aconteceu">
+        <h2>Aconteceu na história</h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+        </p>
+      </div>
+      <div id="Nasceram">
+        <h2>Nasceram</h2>
+        <ul>
+          <li>Sed ut perspiciatis unde</li>
+          <li>Sit voluptatem accusantium</li>
+          <li>Laudantium totam rem</li>
+        </ul>
+      </div>
+      <div id="Morreram">
+        <h2>Morreram</h2>
+        <ul>
+          <li>Sed ut perspiciatis unde</li>
+          <li>Sit voluptatem accusantium</li>
+          <li>Laudantium totam rem</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section" id="App">
+    <img src="assets/img/celulares.png" />
+    <div class="text-content">
+      <h1>Aplicativos do Ipeak</h1>
+      <img src="assets/img/divisor_verm.png" />
+      <p>
+        Para facilitar ainda mais seus estudos do Espiritismo, nós desenvolvemos aplicativos do Roteiro de Estudos para iOS e Android. Agora você poderá estudar offline em seu celular ou tablet. Baixe o aplicativo, é grátis.
+      </p>
+      <div class="btns">
+        <a href="#"><img src="assets/img/app-store.png" /></a>
+        <a href="#"><img src="assets/img/google play.png" /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section" id="Facebook">
+    <div class="text-content">
+      <h1>Ipeak no Facebook</h1>
+      <p>
+        Curta e compartilhe nossa página no Facebook!
+      </p>
+      <a href="#" class="btn btn-facebook">Acesse nosso Facebook</a>
+    </div>
+    <div class="facebook-image"></div>
+  </section>
+
+  <section class="home-section" id="Newsletter">
+    <h1>Inscreva-se no nosso newsletter para receber <br />textos interessantes e novidades!</h1>
+    <form>
+      <input type="text" name="name" placeholder="Nome" />
+      <input type="email" name="email" placeholder="Seu e-mail" />
+      <input type="submit" class="btn" value="Cadastrar" />
+    </form>
+  </section>
+
+  </div>
+  <footer class="footer">
+    <img id="FooterLogo" src="assets/img/logo_vetoria.png" />
+    <img id="FooterLogoName" src="assets/img/Instituto de Pesquis.png" />
+    <span>2017 - Desenvolvido por <a href="#">MobiMais</a> - Todos os direitos reservados.</span>
+    <a href="#" id="FooterAdmin">
+      <img src="assets/img/botao_admin.png" />
+    </a>
+  </footer>
+</body>
+</html>
