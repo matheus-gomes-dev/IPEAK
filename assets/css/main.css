@@ -924,77 +924,6 @@ html {
   #NewsletterModal .modal-container p {
     margin-bottom: 55px; }
 
-.busca .header {
-  margin-top: 149px;
-  color: #c21d24;
-  font-size: 48px;
-  font-weight: 200; }
-.busca .pills {
-  margin-top: 65px; }
-  .busca .pills #opcao-roteiro {
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    display: inline-block;
-    position: relative;
-    left: 82px; }
-  .busca .pills #opcao-portal {
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    display: inline-block;
-    position: relative;
-    left: 126px; }
-  .busca .pills .input-search {
-    display: inline-block;
-    position: relative;
-    float: right;
-    right: 20px;
-    bottom: 20px; }
-    .busca .pills .input-search img {
-      position: relative;
-      float: right;
-      right: 25px; }
-  .busca .pills input {
-    width: 266px;
-    border: 1px solid #8e8e8e;
-    border-style: none none solid none;
-    font-style: italic; }
-  .busca .pills .pill-opcao:hover {
-    cursor: pointer; }
-  .busca .pills input:focus {
-    outline: none; }
-  .busca .pills .pill-selecionado {
-    color: #c21d24; }
-  .busca .pills .pill-indicador {
-    background-color: #c21d24;
-    width: 234px;
-    height: 3px;
-    position: relative;
-    top: 12px; }
-  .busca .pills .pill-indicador-roteiro {
-    left: 57px; }
-  .busca .pills .pill-indicador-portal {
-    left: 298px; }
-.busca .table-busca {
-  position: relative;
-  top: 26px; }
-  .busca .table-busca table {
-    width: 93%;
-    position: relative;
-    left: 50px; }
-.busca .paginacao {
-  height: 250px;
-  width: 90%;
-  position: relative;
-  top: 35px;
-  left: calc(calc(100% - 1200px)/2 + 6px);
-  font-size: 16px; }
-  .busca .paginacao .page {
-    display: inline-block;
-    margin-right: 10.5px; }
-  .busca .paginacao .page:hover {
-    cursor: pointer; }
-  .busca .paginacao .current-page {
-    color: #c21d24; }
 
 .conteudo {
   width: 100%;
@@ -1042,4 +971,4 @@ html {
     color: #000000;
     border: none; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

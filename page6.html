@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biografia</title>
+  <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">  
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <!-- <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="assets/js/conteudo_dinamico.js"></script>
+  <script type="text/javascript" src="assets/js/scripts.js"></script>
+</head>
+
+<body>
+  <style>
+    body {
+      padding-top: 120px !important;
+    }
+  </style>
+
+  <nav class="navbar no-print">
+    <div class="nav-logo">
+      <img src="assets/img/logo_vetoria.png" />
+      <img src="assets/img/Instituto de Pesquis.png" />
+    </div>
+    <ul class="nav">
+      <li class="nav-item" data-toggle="dropdown">
+        <a class="nav-link" href="#">O que é o Espiritismo</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a href="#">Segundo Kardec e os Espíritos</a>  
+          </li>
+          <li class="dropdown-item" data-toggle="dropdown">
+            <a href="#">A SPEE</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="#">Regulamento</a>  
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Objetivos</a>  
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Seu caráter filosófico</a>  
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Membros honorários</a>  
+              </li>
+              <li class="dropdown-item" data-toggle="dropdown">
+                <a href="#">Histórico do Espiritismo</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#">O que deve ser a história do Espiritismo</a>  
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Os adversários e suas táticas</a>  
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Os inimigos encarnados</a>  
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Os inimigos desencarnados</a>  
+                  </li>
+                </ul>  
+              </li>  
+            </ul>  
+          </li>  
+        </ul>
+      </li>
+      <li class="nav-item" data-toggle="dropdown">
+        <a class="nav-link" href="#">Allan Kardec</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a href="#">Biografia</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Na opinião dos amigos</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Kardec, modelo de devotamento e abnegação</a>
+          </li>
+          <li class="dropdown-item" data-toggle="dropdown">
+            <a href="#">Textos de Hippolyte-Léon Denizard Rivail</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="#">Discurso sobre a educação</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Escola fundada no Mont-Jura</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Roteiro de estudos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Obras de Allan Kardec</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Estudos e pesquisas</a>
+      </li>
+      <li class="nav-item" data-toggle="dropdown">
+        <a class="nav-link" href="#">Mais</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a href="#">Contato</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Fazer uma doação</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Item 3</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Item 4</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#">Item 5</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav-right-top">
+      <li class="nav-right-item">
+        <a id="NavRightTopSearch" class="nav-right-link" href="#"></a>
+      </li>
+      <li class="nav-right-item">
+        <a id="NavRightTopBrazil" class="nav-right-link" href="#"></a>
+      </li>
+      <li class="nav-right-item">
+        <a id="NavRightTopFrance" class="nav-right-link" href="#"></a>
+      </li>
+    </ul>
+    <ul class="nav-right">
+      <li class="nav-right-item">
+        <a id="NavRightCell" class="nav-right-link" href="#App"></a>
+      </li>
+      <li class="nav-right-item">
+        <a id="NavRightNewsletter" class="nav-right-link" href="#Newsletter"></a>
+      </li>
+      <li class="nav-right-item">
+        <a id="NavRightFacebook" class="nav-right-link" href="#Facebook"></a>
+      </li>
+    </ul>
+    <a href="#slider" id="RollTop">
+      <img src="assets/img/Seta_volta_cima.png"/>
+    </a>
+  </nav>
+
+  <section class="conteudo">
+    <div>
+        <div class="conteudo-controls no-print">
+            <a id="smallerText" class="no-print" href="#"><img src="assets/img/tam_texto_menos.png" /></a>
+            <img class="no-print" src="assets/img/tam_texto_letra.png" />
+            <a class="no-print" id="biggerText" href="#"><img src="assets/img/tam_texto_mais.png" /></a>
+        </div>
+        <div class="conteudo-text">
+            <h2>Biografia</h2>
+            <p>
+                    ALLAN KARDEC (Hyppolite-Léon-Denizard Rivail). Fundador da doutrina chamada espírita, nascido em Lyon em 3 de outubro de 1804, oriundo de Bourg en Bresse, departamento do Ain. Conquanto filho e neto de advogados, e de uma antiga família que se distinguiu na magistratura e no foro, não seguiu essa carreira; dedicou-se cedo ao estudo da ciência e da filosofia. Aluno de Pestalozzi, na Suíça, torna-se um dos discípulos eminentes deste célebre pedagogo, e um dos propagadores de seu sistema de educação, que exerceu grande influência na reforma dos estudos na França e Alemanha. Foi nesta escola que se desenvolveram as ideias que deviam colocá-lo mais tarde na classe dos homens de progresso e dos livres pensadores.
+                    
+                    Nascido na religião católica, mas criado num país protestante, os atos de intolerância que sofreu a esse respeito lhe fizeram conceber, desde os quinze anos de idade, a ideia de uma reforma religiosa, na qual trabalhou em silêncio por muitos anos, com o pensamento de chegar à unificação das crenças; mas faltava-lhe o elemento indispensável à solução desse grande problema.
+                    
+                    O Espiritismo veio mais tarde fornecer-lhe esse elemento e imprimir uma direção especial a seus trabalhos. Por volta de 1850, quando se tratou das manifestações dos espíritos, Allan Kardec entregou-se a observações perseverantes sobre esses fenômenos, e dedicou-se principalmente a deduzir daí as consequências filosóficas. Entreviu aí primeiramente o princípio de novas leis naturais: as que regem as relações do mundo visível e do mundo invisível; reconheceu na ação deste último uma das forças da natureza, cujo conhecimento devia lançar luz sobre uma quantidade de problemas considerados insolúveis, e compreendeu seu alcance do ponto de vista científico, social e religioso. Suas principais obras sobre esta matéria são: o Livro dos Espíritos, para a parte filosófica, e cuja primeira edição saiu em 18 de abril de 1857; o Livro dos Médiuns, para a parte experimental e científica (janeiro de 1861); o Evangelho segundo o Espiritismo, para a parte moral (abril de 1864); o Céu e o Inferno, ou a justiça de Deus segundo o Espiritismo (agosto de 1865); a Revista Espírita, jornal de estudos psicológicos, coletânea mensal começada em 10 de janeiro de 1858. Fundou em Paris, em 10 de abril de 1858, a primeira sociedade espírita regularmente constituída com o nome de Sociedade Parisiense de Estudos Espíritas, cuja finalidade exclusiva é o estudo de tudo o que pode contribuir para o progresso desta nova ciência.
+                    
+                    Allan Kardec se defende de ter escrito algo sob a influência de ideias preconcebidas ou sistemáticas; homem de caráter frio e calmo, ele observou os fenômenos e deduziu as leis que os regem; foi o primeiro a lhes dar a teoria e formar um corpo metódico e regular. Demonstrando que os fatos falsamente qualificados de sobrenaturais estão submetidos a leis, ele os faz entrar na ordem dos fenômenos da natureza, e destrói assim o último refúgio do maravilhoso e um dos elementos da superstição. Durante os primeiros anos em que se tratou de fenômenos espíritas, essas manifestações foram mais objeto de curiosidade do que assunto de meditações sérias; o Livro dos Espíritos fez considerar a coisa sob um aspecto completamente diferente; então foram abandonadas as mesas giratórias, que haviam sido somente um prelúdio, e aderiu-se a um corpo de doutrina que abarcava todas as questões interessando a humanidade.
+                    
+                    Do aparecimento do Livro dos Espíritos data a verdadeira fundação do Espiritismo, que, até então, possuíra apenas elementos esparsos sem coordenação, e cujo alcance não pudera ser compreendido por todo o mundo; a partir desse momento também a doutrina reteve a atenção dos homens sérios e logrou um desenvolvimento rápido. Em poucos anos essas ideias encontraram inúmeros adeptos em todas as classes da sociedade e em todos os países. Esse sucesso sem precedentes deve-se sem dúvida à simpatia que essas ideias encontraram, mas ele é devido também em grande parte à clareza, que é um dos caracteres distintivos dos escritos de Allan Kardec.
+                    
+                    Abstendo-se das fórmulas abstratas da metafísica, o autor soube colocar-se ao alcance de todo o mundo e ser lido sem fadiga, condição essencial para a vulgarização de uma ideia. Sobre todos os pontos controversos, sua argumentação, de uma lógica cerrada, oferece pouca ocasião à refutação, e predispõe à convicção. As provas materiais que o Espiritismo dá da existência da alma e da vida futura tendem à destruição das ideias materialistas e panteístas. Um dos princípios mais fecundos desta doutrina, e que decorre do precedente, é o da pluralidade das existências, já entrevisto por uma quantidade de filósofos antigos e modernos, e nos últimos tempos por Jean Reynaud, Charles Fourier, Eugene Sue e outros; mas permanecera no estado de hipótese e de sistema, enquanto o Espiritismo demonstra sua realidade, e prova que este é um dos atributos essenciais da humanidade. Deste princípio decorre a solução de todas as anomalias aparentes da vida humana, de todas as desigualdades intelectuais, morais e sociais; o homem sabe assim de onde vem, aonde vai, para que fim está na terra, e por que sofre. As ideias inatas se explicam pelos conhecimentos adquiridos nas vidas anteriores; a marcha ascendente dos povos e da humanidade, pelos homens dos tempos passados que revivem após terem progredido; as simpatias e as antipatias, pela natureza das relações anteriores; essas relações, que ligam a grande família humana de todas as épocas, dão como base as próprias leis da natureza, e não mais uma teoria, aos grandes princípios de fraternidade, de igualdade, de liberdade e de solidariedade universal. Ele toca, além disso, diretamente na religião, pois sendo a pluralidade das existências a prova do progresso da alma, isso destrói radicalmente o dogma do inferno e das penas eternas, incompatível com esse progresso; com esse dogma ultrapassado caem os inúmeros abusos dele originados. Em vez do princípio: Fora da Igreja não há salvação, que sustenta a divisão e a animosidade entre as diferentes seitas, e que fez derramar tanto sangue, o Espiritismo tem por máxima: Fora da caridade não há salvação, ou seja, a igualdade de todos os homens diante de Deus, a tolerância, a liberdade de consciência e a benevolência mútua. Em vez da fé cega que aniquila a liberdade de pensar, ele diz: Não há fé inabalável senão aquela que pode mirar a razão frente a frente em todas as idades da humanidade. Para a fé é preciso uma base, e esta base é a inteligência perfeita do que se deve crer; para crer não basta ver, é preciso sobretudo compreender. A fé cega não é mais deste século; ora, é precisamente o dogma da fé cega que faz hoje o maior número de incrédulos, porque ela quer impor-se, e exige a abdicação de uma das mais preciosas faculdades do homem: o raciocínio e o livre arbítrio. (Evangelho segundo o Espiritismo.) A doutrina espírita, tal como enunciada nas obras de Allan Kardec, contém em si os elementos de uma transformação geral das ideias, e a transformação das ideias traz forçosamente a da sociedade. Deste ponto de vista ela merece a atenção de todos os homens de progresso. Estendendo-se já a sua influência a todos os países civilizados, ela dá à personalidade de seu fundador uma importância considerável, e tudo faz prever que, num futuro talvez próximo, ele será colocado como um dos reformadores do século XIX.
+                    
+                    Fonte: Nouveau Dictionnaire Universel, par Maurice Lachâtre, Docks de la Librairie, 38 - Paris, 1866
+            </p>
+            <div class="book-footer no-print">
+              <a href="#" id="PrintBtn"><img src="assets/img/bot_imprimir.png" /></a>
+              <a href="#" class="btn-modal" open-modal="IndicarModal"><img src="assets/img/bot_indicar.png" /></a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="footer no-print">
+    <img id="FooterLogo" src="assets/img/logo_vetoria.png" />
+    <img id="FooterLogoName" src="assets/img/Instituto de Pesquis.png" />
+    <span>2017 - Desenvolvido por <a href="#">MobiMais</a> - Todos os direitos reservados.</span>
+    <a class="btn-modal" open-modal="AdminModal" href="#" id="FooterAdmin">
+      <img src="assets/img/botao_admin.png" />
+    </a>
+  </footer>
+</body>
+</html>

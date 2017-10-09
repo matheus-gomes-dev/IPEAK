@@ -102,7 +102,7 @@ conteudo_dinamico.portugues=
 		},
 		"roteiro_estudos":[
 			{
-				"titulo" : "O Livro dos Espíritos",
+				"descricao" : "O Livro dos Espíritos",
 				"conteudo": [
 					{
 						"descricao" : "Introdução ao estudo da Doutrina Espírita",
@@ -116,8 +116,7 @@ conteudo_dinamico.portugues=
 								"url" : "#",
 								"conteudo_pesquisavel" : "Deus em Prolegômenos"
 							}
-						],
-						"proximos_campos" : false
+						]
 					},
 					{
 						"descricao" : "Parte Primeira - Das causas primárias",
@@ -125,16 +124,12 @@ conteudo_dinamico.portugues=
 							"url" : "#",
 							"descricao" : "(Ver a bibliografia)"
 						},
-						"docs": false,
-						"proximos_campos": [
+						"conteudo": [
 							{
 								"descricao" : "Capítulo I - De Deus",
-								"link" : false,
-								"docs" : false,
-								"proximos_campos":[
+								"conteudo":[
 									{
 										"descricao" : "Deus e o infinito",
-										"link" : false,
 										"docs" : [
 											{
 												"descricao" : "Deus e o infinito",
@@ -156,46 +151,27 @@ conteudo_dinamico.portugues=
 												"conteudo_pesquisavel": "conteudo pesquisavel 3",
 												"url" : "#"
 											}
-										],
-										"proximos_campos": false
+										]
 									},
 									{
 										"descricao" : "Provas da existência de deus",
-										"link" : false,
-										"docs" : false,
-										"proximos_campos": false
 									},
 									{
 										"descricao" : "Atributos da divindade",
-										"link" : false,
-										"docs" : false,
-										"proximos_campos": false
 									},
 									{
 										"descricao" : "Panteísmo",
-										"link" : false,
-										"docs" : false,
-										"proximos_campos": false
 									}
 								]
 							},
 							{
 								"descricao" : "Capítulo II - Dos elementos gerais do universo",
-								"link" : false,
-								"docs" : false,
-								"proximos_campos": false
 							},
 							{
 								"descricao" : "Capítulo III - Da criação",
-								"link" : false,
-								"docs" : false,
-								"proximos_campos": false
 							},
 							{
 								"descricao" : "Capítulo IV - Do princípio vital",
-								"link" : false,
-								"docs" : false,
-								"proximos_campos": false
 							}
 						]
 					},
@@ -216,36 +192,29 @@ conteudo_dinamico.portugues=
 								"conteudo_pesquisavel": "conteudo x",
 								"url" : "#"
 							}
-						],
-						"proximos_campos": false
+						]
 					},
 					{
 						"descricao" : "Parte Terceira - Das leis morais",
 						"link" : {
 							"url" : "#",
 							"descricao" : "(Ver a bibliografia)"
-						},
-						"docs" : false,
-						"proximos_campos": false
+						}
 					},
 					{
 						"descricao" : "Parte Quarta - Das esperanças e consolações",
 						"link" : {
 							"url" : "#",
 							"descricao" : "(Ver a bibliografia)"
-						},
-						"docs" : false,
-						"proximos_campos": false
+						}
 					}
 				]
 			},
 			{
-				"titulo": "Revista Espírita 1858",
-				"conteudo": false
+				"descricao": "Revista Espírita 1858"
 			},
 			{
-				"titulo": "Revista Espírita 1859",
-				"conteudo": false
+				"descricao": "Revista Espírita 1859"
 			}
 		]
 	}
@@ -353,7 +322,7 @@ conteudo_dinamico.frances=
 		},
 		"roteiro_estudos":[
 			{
-				"titulo" : "O Livro dos Espíritos",
+				"descricao" : "O Livro dos Espíritos",
 				"conteudo": [
 					{
 						"descricao" : "Introdução ao estudo da Doutrina Espírita",
@@ -366,8 +335,7 @@ conteudo_dinamico.frances=
 								"descricao" : "Prolegômenos",
 								"url" : "#"
 							}
-						],
-						"proximos_campos" : false
+						]
 					},
 					{
 						"descricao" : "Parte Primeira - Das causas primárias",
@@ -375,16 +343,12 @@ conteudo_dinamico.frances=
 							"url" : "#",
 							"descricao" : "(Ver a bibliografia)"
 						},
-						"docs": false,
-						"proximos_campos": [
+						"conteudo": [
 							{
 								"descricao" : "Capítulo I - De Deus",
-								"link" : false,
-								"docs" : false,
-								"proximos_campos":[
+								"conteudo":[
 									{
 										"descricao" : "Deus e o infinito",
-										"link" : false,
 										"docs" : [
 											{
 												"descricao" : "Deus e o infinito",
@@ -402,46 +366,27 @@ conteudo_dinamico.frances=
 												"descricao" : "3",
 												"url" : "#"
 											}
-										],
-										"proximos_campos": false
+										]
 									},
 									{
 										"descricao" : "Provas da existência de deus",
-										"link" : false,
-										"docs" : false,
-										"proximos_campos": false
 									},
 									{
 										"descricao" : "Atributos da divindade",
-										"link" : false,
-										"docs" : false,
-										"proximos_campos": false
 									},
 									{
 										"descricao" : "Panteísmo",
-										"link" : false,
-										"docs" : false,
-										"proximos_campos": false
 									}
 								]
 							},
 							{
 								"descricao" : "Capítulo II - Dos elementos gerais do universo",
-								"link" : false,
-								"docs" : false,
-								"proximos_campos": false
 							},
 							{
 								"descricao" : "Capítulo III - Da criação",
-								"link" : false,
-								"docs" : false,
-								"proximos_campos": false
 							},
 							{
 								"descricao" : "Capítulo IV - Do princípio vital",
-								"link" : false,
-								"docs" : false,
-								"proximos_campos": false
 							}
 						]
 					},
@@ -450,37 +395,29 @@ conteudo_dinamico.frances=
 						"link" : {
 							"url" : "#",
 							"descricao" : "(Ver a bibliografia)"
-						},
-						"docs" : false,
-						"proximos_campos": false
+						}
 					},
 					{
 						"descricao" : "Parte Terceira - Das leis morais",
 						"link" : {
 							"url" : "#",
 							"descricao" : "(Ver a bibliografia)"
-						},
-						"docs" : false,
-						"proximos_campos": false
+						}
 					},
 					{
 						"descricao" : "Parte Quarta - Das esperanças e consolações",
 						"link" : {
 							"url" : "#",
 							"descricao" : "(Ver a bibliografia)"
-						},
-						"docs" : false,
-						"proximos_campos": false
+						}
 					}
 				]
 			},
 			{
-				"titulo": "Revista Espírita 1858",
-				"conteudo": false
+				"descricao": "Revista Espírita 1858",
 			},
 			{
-				"titulo": "Revista Espírita 1859",
-				"conteudo": false
+				"descricao": "Revista Espírita 1859",
 			}
 		]
 	}

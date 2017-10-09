@@ -1,51 +1,193 @@
+//import $ from 'jquery';
 $(document).ready(function() {
-
-  // console.log(conteudo_dinamico.portugues);
-  // console.log(conteudo_dinamico.frances);
-
-  //DynamicRender(conteudo_dinamico)
-
+  SmoothScroll();
   DropdownMenu();
   Slider();
+  BookLanguages();
+  RelatedTextToggle();
+  RoteiroListToggle();
+  RoteiroBuildList();
+  ManageModals();
+  TextSizes();
+  PrintPage();
+});
 
-  $("a").on('click', function(event) {
+function PrintPage() {
+  $(document).on('click', '#PrintBtn', function(event) {
+    console.log('hi');
+    event.preventDefault();
+    window.print();
+  });
+}
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+function TextSizes() {
+  function smallerCallback() {
+    $(document)
+      .on('click', '#smallerText', function(event) {
+        event.preventDefault();
+        //$('p, h1, h2, a, li, ul').each(function() {
+        $('h2, p').each(function() {
+          var fontSize = parseInt($(this).css('font-size'));
+          fontSize--;
+          $(this).css('font-size', fontSize);
+        });
+      })
+      .on('click', '#biggerText', function() {
+        event.preventDefault();
+        //$('p, h1, h2, a, li, ul').each(function() {
+        $('h2, p').each(function() {
+          var fontSize = parseInt($(this).css('font-size'));
+          fontSize++;
+          $(this).css('font-size', fontSize);
+        });
+      });
+  }
+  smallerCallback();
+}
 
-      // Store hash
-      var hash = this.hash;
-      // window.location.hash = hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 120
-      }, 800);
-    } // End if
+function ManageModals() {
+
+  $('.btn-modal').click(function(e) {
+    e.preventDefault();
+    openModal($(this).attr('open-modal'));
   });
 
-});
+  $('.btn-modal-close').click(function(e) {
+    e.preventDefault();
+    closeModal($(this));
+  });
+
+  function openModal(id) {
+    var modal = $('#' + id);
+    modal.addClass('modal-show');
+
+    $(document).keydown(function(e) {
+      if(e.key == 'Escape') {
+        e.preventDefault();
+        modal.removeClass('modal-show');
+      }
+    });
+
+    modal.click(function() {
+      modal.removeClass('modal-show');
+    });
+
+    modal.find('.modal-container').click(function(e) {
+      e.stopPropagation();
+    });
+  }
+
+  function closeModal(btn) {
+    btn.closest('.modal').removeClass('modal-show');
+  }
+}
+
+function RoteiroBuildList() {
+  var list = conteudo_dinamico.portugues['roteiro_estudos'];
+
+  var roteiro = BuildRoteiro(list);
+  $('#RoteiroFull .roteiro-list').html(roteiro);
+
+  function BuildRoteiro(list) {
+    var roteiro = '<ul>';
+
+    for(var i=0; i<list.length; i++) {
+      roteiro += '<li>';
+      if(list[i].descricao) {
+        roteiro += '<p' + (list[i].conteudo || list[i].docs ? ' class="more"' : '') + '>' + list[i].descricao + '</p>';
+      }
+      if(list[i].conteudo) {
+        roteiro += BuildRoteiro(list[i].conteudo);
+      }
+      else if(list[i].docs) {
+        roteiro += '<ul class="docs">';
+        for(var j=0; j<list[i].docs.length; j++) {
+          roteiro += '<li>' + list[i].docs[j].descricao + '</li>';
+        }
+        roteiro += '</ul>';
+      }
+      roteiro += ('</li>');
+    }
+
+    roteiro += '</ul>';
+    return roteiro;
+  }
+}
+
+function RoteiroListToggle() {
+  $(document).on('click', '#RoteiroFull .roteiro-list li p.more', function(e) {
+    $(this).closest('li').toggleClass('expanded');
+    e.stopPropagation();
+  });
+}
+
+function SmoothScroll() {
+  $('a[href*="#"]')
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+    // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
+        location.hostname == this.hostname
+      ) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top - 120
+          }, 1000);
+        }
+      }
+    });
+}
+
+function RelatedTextToggle() {
+  $('#TextosRelacionados li a').click(function(e) {
+    $(this).parent().toggleClass('active');
+    e.preventDefault();
+  });
+}
+
+function BookLanguages() {
+  $('#Books, .book-selectors').addClass('pt-only').removeClass('fr-only');
+
+  $('#compare').click(function() {
+    $('#Books, .book-selectors').removeClass('pt-only').removeClass('fr-only');
+  });
+
+  $('#PtFlagBook').click(function() {
+    $('#Books, .book-selectors').addClass('pt-only').removeClass('fr-only');
+  });
+
+  $('#FrFlagBook').click(function() {
+    $('#Books, .book-selectors').removeClass('pt-only').addClass('fr-only');
+  });
+}
 
 function Slider() {
   var slider = $('#slider');
-  slider.find('.slide').hide();
-  slider.find('#slide-0').show();
-  slider.find('#slideNext').click(function() {
-    slideNext();
-  });
-  slider.find('#slidePrev').click(function() {
-    slidePrev();
-  });
-  setInterval(function() {
-    slideNext();
-  }, 6000);
+  if(slider.length > 0) {
+    slider.find('.slide').hide();
+    slider.find('#slide-0').show();
+    slider.find('#slideNext img').click(function() {
+      slideNext();
+    });
+    slider.find('#slidePrev img').click(function() {
+      slidePrev();
+    });
+    setInterval(function() {
+      slideNext();
+    }, 6000);
+  }
 }
 
 function slideNext() {
   var slider = $('#slider');
   var index = parseInt(slider.find('.slide:visible').attr('id').split('-')[1]);
   index = (index+1) % slider.find('.slide').length;
-  console.log(index);
   slider.find('.slide').hide();
   slider.find('#slide-'+index+'').show();
 }
@@ -54,7 +196,6 @@ function slidePrev() {
   var slider = $('#slider');
   var index = parseInt(slider.find('.slide:visible').attr('id').split('-')[1]);
   index = (index-1+slider.find('.slide').length) % slider.find('.slide').length;
-  console.log(index);
   slider.find('.slide').hide();
   slider.find('#slide-'+index+'').show();
 }
@@ -74,13 +215,7 @@ function DropdownMenu() {
       menu.stop()
         .animate({
           opacity: 0,
-        }, 200, function() {menu.hide()});
+        }, 200, function() {menu.hide();});
       e.preventDefault();
     });
-}
-
-function DynamicRender(json){
-  //essa função recebe o JSON com o conteúdo do site, definido em conteudo_dinamico.js
-  //Deverá ser chamada em dois momentos: quando a página é carregada, e quando há mudança de idioma
-  //renderiza o html da página a partir do JSON, selecionando cada elemento por sua classe/id
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Page 1</title>
+  <title>Principal</title>
   <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -13,14 +13,59 @@
 </head>
 
 <body>
+  <style>
+    body {
+      padding-top: 120px !important;
+    }
+  </style>
+
   <nav class="navbar">
     <div class="nav-logo">
       <img src="assets/img/logo_vetoria.png" />
       <img src="assets/img/Instituto de Pesquis.png" />
     </div>
     <ul class="nav">
-      <li class="nav-item">
+      <li class="nav-item" data-toggle="dropdown">
         <a class="nav-link" href="#">O que é o Espiritismo</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a href="#">Segundo Kardec e os Espíritos</a>  
+          </li>
+          <li class="dropdown-item" data-toggle="dropdown">
+            <a href="#">A SPEE</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="#">Regulamento</a>  
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Objetivos</a>  
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Seu caráter filosófico</a>  
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Membros honorários</a>  
+              </li>
+              <li class="dropdown-item" data-toggle="dropdown">
+                <a href="#">Histórico do Espiritismo</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#">O que deve ser a história do Espiritismo</a>  
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Os adversários e suas táticas</a>  
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Os inimigos encarnados</a>  
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Os inimigos desencarnados</a>  
+                  </li>
+                </ul>  
+              </li>  
+            </ul>  
+          </li>  
+        </ul>
       </li>
       <li class="nav-item" data-toggle="dropdown">
         <a class="nav-link" href="#">Allan Kardec</a>
@@ -315,16 +360,41 @@
     <form>
       <input type="text" name="name" placeholder="Nome" />
       <input type="email" name="email" placeholder="Seu e-mail" />
-      <input type="submit" class="btn" value="Cadastrar" />
+      <button type="submit" class="btn btn-modal" open-modal="NewsletterModal">OK</button>
     </form>
   </section>
 
+  <section class="modal" id="NewsletterModal">
+      <div class="modal-container">
+        <h1>Sucesso!</h1>
+        <p>Você se cadastrou para receber a newsletter do Ipeak</p>
+        <a href="#" class="btn btn-modal-close">OK</a>
+      </div>
+    </section>
+
   </div>
+
+  <section class="modal" id="AdminModal">
+    <div class="modal-container">
+      <form action="" method="POST">
+        <h1>IPEAK Administrador</h1>
+        <input type="text" placeholder="Login" name="login" />
+        <input type="password" placeholder="Senha" name="senha" />
+        <button class="btn" type="submit">Login</button>
+      </form>
+      <form action="" method="POST">
+        <h1>Recuperar senha</h1>
+        <input type="email" placeholder="E-mail" name="email" />
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
   <footer class="footer">
     <img id="FooterLogo" src="assets/img/logo_vetoria.png" />
     <img id="FooterLogoName" src="assets/img/Instituto de Pesquis.png" />
     <span>2017 - Desenvolvido por <a href="#">MobiMais</a> - Todos os direitos reservados.</span>
-    <a href="#" id="FooterAdmin">
+    <a class="btn-modal" open-modal="AdminModal" href="#" id="FooterAdmin">
       <img src="assets/img/botao_admin.png" />
     </a>
   </footer>

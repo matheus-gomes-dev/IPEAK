@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mecanismo de Busca</title>
+  <title>Para refletir</title>
   <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <!-- <script src="assets/js/popper.js"></script>
   <script src="assets/js/bootstrap.min.js"></script> -->
   <script type="text/javascript" src="assets/js/conteudo_dinamico.js"></script>
-  <script type="text/javascript" src="assets/js/busca.js"></script>
+  <script type="text/javascript" src="assets/js/scripts.js"></script>
 </head>
 
 <body>
-  <nav class="navbar">
+  <nav class="navbar no-print">
     <div class="nav-logo">
       <img src="assets/img/logo_vetoria.png" />
       <img src="assets/img/Instituto de Pesquis.png" />
@@ -90,32 +91,63 @@
     </ul>
     <ul class="nav-right">
       <li class="nav-right-item">
-        <a id="NavRightCell" class="nav-right-link" href="#App"></a>
+        <a id="NavRightCell" class="nav-right-link" href="page1.html#App"></a>
       </li>
       <li class="nav-right-item">
-        <a id="NavRightNewsletter" class="nav-right-link" href="#Newsletter"></a>
+        <a id="NavRightNewsletter" class="nav-right-link" href="page1.html#Newsletter"></a>
       </li>
       <li class="nav-right-item">
-        <a id="NavRightFacebook" class="nav-right-link" href="#Facebook"></a>
+        <a id="NavRightFacebook" class="nav-right-link" href="page1.html#Facebook"></a>
       </li>
     </ul>
-    <a href="#slider" id="RollTop">
+    <a href="#ParaRefletirFrases" id="RollTop">
       <img src="assets/img/Seta_volta_cima.png"/>
     </a>
   </nav>
 
-  <div class="busca">
-	  	<div class="header">
-	  		<span>Resultados da busca</span>
-		  </div>
-		  <div class="pills">
-		  	<div class="pill-roteiro pill-selecionado">No roteiro de estudos</div>
-		  	<div class="pill-portal">No conteúdo do portal</div>
-		  	<div id="pill-indicador" class="pill-indicador-roteiro"></div><!-- mudar para a classe "pill-indicador-portal ao click-->
-		  </div>
-  </div>
+  <section id="ParaRefletirFrases">
+    <div>
+      <h1>Para refletir</h1>
+      <ul>
+        <li>
+          <p>
+            O Espiritismo só reconhece como adeptos aqueles que põem em prática os seus ensinamentos, isto é, que trabalham a sua própria melhora moral, porque é esse o sinal característico do verdadeiro espírita.
+          </p>
+          <div class="author">
+            Autor: Allan Kardec
+          </div>
+          <div class="source">
+            Fonte: Revista Espírita, janeiro de 1869 - Processo das envenenadoras de Marselha
+          </div>
+        </li>
+        <li>
+          <p>
+            O Espiritismo só reconhece como adeptos aqueles que põem em prática os seus ensinamentos, isto é, que trabalham a sua própria melhora moral, porque é esse o sinal característico do verdadeiro espírita.
+          </p>
+          <div class="author">
+            Autor: Allan Kardec
+          </div>
+          <div class="source">
+            Fonte: Revista Espírita, janeiro de 1869 - Processo das envenenadoras de Marselha
+          </div>
+        </li>
+        <li>
+          <p>
+            O Espiritismo só reconhece como adeptos aqueles que põem em prática os seus ensinamentos, isto é, que trabalham a sua própria melhora moral, porque é esse o sinal característico do verdadeiro espírita.
+          </p>
+          <div class="author">
+            Autor: Allan Kardec
+          </div>
+          <div class="source">
+            Fonte: Revista Espírita, janeiro de 1869 - Processo das envenenadoras de Marselha
+          </div>
+        </li>
+      </ul>
+      <a href="#" id="PrintBtn" class="no-print"><img src="assets/img/bot_imprimir.png" /></a>
+    </div>
+  </section>
 
-  <footer class="footer">
+  <footer class="footer no-print">
     <img id="FooterLogo" src="assets/img/logo_vetoria.png" />
     <img id="FooterLogoName" src="assets/img/Instituto de Pesquis.png" />
     <span>2017 - Desenvolvido por <a href="#">MobiMais</a> - Todos os direitos reservados.</span>
@@ -124,3 +156,4 @@
     </a>
   </footer>
 </body>
+</html>
