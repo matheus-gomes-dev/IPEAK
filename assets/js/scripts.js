@@ -68,9 +68,11 @@ function ManageModals() {
       }
     });
 
-    modal.click(function() {
-      modal.removeClass('modal-show');
-    });
+    if(id != "pesquisaModal"){
+      modal.click(function() {
+        modal.removeClass('modal-show');
+      });
+    }
 
     modal.find('.modal-container').click(function(e) {
       e.stopPropagation();
