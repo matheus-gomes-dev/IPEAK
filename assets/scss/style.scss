@@ -1189,7 +1189,7 @@ html {
 #pesquisaModal{
   input{
     display: flex;
-    width: 1017px;
+    width: 80%;
     height: 84px;
     font-size: 20px;
     position: relative;
@@ -1204,12 +1204,12 @@ html {
   }
   img{
     position: relative;
-    left: 950px;
+    left: calc(80% - 70px);
     z-index: 1;
   }
   .close{
     position: relative;
-    left: 1035px;
+    left: calc(80% + 15px);
     bottom: 42px;
     z-index: 1;
   }
